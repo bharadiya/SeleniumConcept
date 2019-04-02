@@ -9,8 +9,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Conversion {
-	public static void main(String[] args) {
-		for (int i = 138; i <= 150; i++) {
+	public static void main(String[] args) throws InterruptedException {
+		for (int i = 1; i <= 150; i++) {
 			System.setProperty("webdriver.chrome.driver", "//home//shashank//Downloads//Compressed//chromedriver");
 			WebDriver driver = new ChromeDriver();
 			driver.get("https://www.onlineocr.net/");
@@ -23,17 +23,8 @@ public class Conversion {
 			driver.findElement(By.id("MainContent_btnOCRConvert")).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("MainContent_lnkBtnDownloadOutput")));
 			driver.findElement(By.id("MainContent_lnkBtnDownloadOutput")).click();
-//			int j = 1;
-//			while (true) {
-////				for (int k = 0; k < 100000; k++) {
-////					System.out.print(k);
-////				}
-//				if (j == 100000)
-//					break;
-//				j++;
-//				System.out.print(j);
-//			}
-//			driver.close();
+			Thread.sleep(3000);
+			driver.close();
 		}
 	}
 }
