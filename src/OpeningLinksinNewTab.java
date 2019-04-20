@@ -19,12 +19,11 @@ public class OpeningLinksinNewTab {
 			p.findElements(By.tagName("a")).get(i).sendKeys(onClick);
 			Thread.sleep(5000);
 		}
-			Set<String>k=driver.getWindowHandles();
-			Iterator<String>it=k.iterator();
-			while(it.hasNext())
-			{
-				driver.switchTo().window(it.next());
-				System.out.println(driver.getTitle());
-			}
+		Set<String> k = driver.getWindowHandles();
+		Iterator<String> it = k.iterator();
+		while (it.hasNext()) {
+			driver.switchTo().window(it.next());
+			System.out.println(driver.getTitle());
+		}
 	}
 }
