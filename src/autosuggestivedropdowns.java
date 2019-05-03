@@ -17,6 +17,5 @@ public class autosuggestivedropdowns {
 		p.sendKeys("air");
 		p.sendKeys(Keys.ARROW_DOWN);
 		p.sendKeys(Keys.ENTER);
-		
 	}
 }
