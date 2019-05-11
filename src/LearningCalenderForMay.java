@@ -37,7 +37,7 @@ public class LearningCalenderForMay {
 				String amount = driver.findElement(By.xpath("//div[@class='DayPicker-Body']/div[" + i
 						+ "]/div[@aria-disabled='false'][" + j + "]/descendant::*[5]")).getText();
 				int p = Integer.parseInt(amount);
-				if (p > minAmount) {
+				if (p < minAmount) {
 					minAmount = p;
 				}
 			}

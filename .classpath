@@ -10,5 +10,7 @@
 	<classpathentry kind="lib" path="/home/shashank/Downloads/Compressed/selenium-java-3.141.59/client-combined-3.141.59.jar" sourcepath="/home/shashank/Downloads/Compressed/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="/home/shashank/Downloads/Compressed/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="/home/shashank/Downloads/Programs/testng-6.9.10.jar"/>
+	<classpathentry kind="lib" path="/home/shashank/Downloads/Programs/ashot-1.5.4.jar"/>
+	<classpathentry kind="lib" path="/home/shashank/Downloads/Programs/commons-io-2.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
