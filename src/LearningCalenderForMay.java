@@ -50,7 +50,7 @@ public class LearningCalenderForMay {
 		System.setProperty("webdriver.chrome.driver", "//home//shashank//Downloads//Compressed//chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.goibibo.com/");
-		driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
+		// driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 		// Thread.sleep(10000);
 		try {
 			driver.switchTo().frame("notification-frame-22a342a1b");
@@ -74,6 +74,13 @@ public class LearningCalenderForMay {
 				Thread.sleep(1000);
 			}
 			SwitchingMonths(driver);
+			driver.findElement(By.xpath("//div[@id='pax_link_common']")).click();
+			Thread.sleep(2000);
+			for (int i = 0; i < 3; i++) {
+				driver.findElement(By.xpath("//button[@id='adultPaxPlus']")).click();
+				driver.findElement(By.xpath("//button[@id='childPaxPlus']")).click();
+			}
+			driver.findElement(By.xpath("//button[@id='gi_search_btn']")).click();
 		}
 	}
 }
