@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class autosuggestivedropdowns {
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "//home//shashank//Downloads//Compressed//chromedriver");
+		System.setProperty("webdriver.chrome.driver", "//home//sb//Desktop//BackUp//Downloads//chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.paytm.com");
 		WebElement p=driver.findElement(By.xpath("//div[@class='_2CU_']/input"));

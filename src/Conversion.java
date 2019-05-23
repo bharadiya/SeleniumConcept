@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Conversion {
 	public static void main(String[] args) throws InterruptedException {
 		for (int i = 1; i <= 150; i++) {
-			System.setProperty("webdriver.chrome.driver", "//home//shashank//Downloads//Compressed//chromedriver");
+			System.setProperty("webdriver.chrome.driver", "//home//sb//Desktop//BackUp//Downloads//chromedriver");
 			WebDriver driver = new ChromeDriver();
 			driver.get("https://www.onlineocr.net/");
 			WebElement browse = driver.findElement(By.id("fileupload"));

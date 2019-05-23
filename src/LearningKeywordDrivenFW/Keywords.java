@@ -13,8 +13,8 @@ public class Keywords {
 	public static void openBrowser(String browsername) {
 		switch (browsername) {
 		case "chrome": {
-			System.setProperty("webdriver.chrome.driver", "//home//shashank//Downloads//Compressed//chromedriver");
-			driver = new ChromeDriver();
+			System.setProperty("webdriver.chrome.driver", "//home//sb//Desktop//BackUp//Downloads//chromedriver");
+			driver = new ChromeDriver();	
 			break;
 		}
 		case "firefox": {
@@ -30,7 +30,6 @@ public class Keywords {
 	public static void openURL(String url) {
 		driver.get(url);
 	}
-
 	public static void enterText(String type, String value, String text) {
 /*	
  	switch (type) {
@@ -62,8 +61,8 @@ public class Keywords {
 	/***
 	 * returns a WebElement where type should be in form of xpath,cssSelector,id,linkText,partialLinkText,className (Case Sensitive)
 	 * 
-	 * @param type
-	 * @param value
+	 * @param type Eg : xpath,cssSelector,id ,linkText,partialLinkText,className
+	 * @param value Eg: //div[@class='u_0_3']
 	 * @return {@code WebElement } in the form of driver.findElement(By.{@code type(@code value )})
 	 *
 	 */

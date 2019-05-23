@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.Select;
 public class UsingSelectClass {
 	public static void main(String[] args) {
 
-		System.setProperty("webdriver.chrome.driver", "//home//shashank//Downloads//Compressed//chromedriver");
+		System.setProperty("webdriver.chrome.driver", "//home//sb//Desktop//BackUp//Downloads//chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://fb.com");
 		Select l=new Select(driver.findElement(By.id("month")));

@@ -7,7 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class LearningActionClass {
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "//home//shashank//Downloads//Compressed//chromedriver");
+		System.setProperty("webdriver.chrome.driver", "//home//sb//Desktop//BackUp//Downloads//chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.fb.com/");
 		Actions a=new Actions(driver);
