@@ -1,0 +1,17 @@
+AutoIT Editor 
+
+->ControlFocus("Open","","Edit1");  This method takes 3 arguments "Title","","Class+Instance"
+->ControlSetText("Open","","Edit1","E:\exam form\photo n sign\declaration.jpg");  This method takes 4 arguments "Title","","Class+Instance",File path to be uploaded
+->ControlClick("Open","","Button1"); This method takes 3 arguments "Title","","Class+Instance"
+
+AutoIT Window Info
+-> In this there is a finderTool with the help of that we get arguments for above 3 methods.
+
+Save this file 
+Compile it
+Convert it into .exe file format
+
+Now in .java file , we will have to give this .exe files path with the help of following command
+
+Runtime.getRuntime().exec("file path to .exe file")
+

@@ -21,7 +21,7 @@ public class UsingJavaInBuiltMethod extends AllRequirements {
 				"October", "November", "December" };
 		Calendar cal = Calendar.getInstance();
 		driver.get("https://fb.com");
-		
+
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File screenshot = ts.getScreenshotAs(OutputType.FILE);
 		try {
