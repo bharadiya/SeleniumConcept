@@ -10,7 +10,7 @@
 	<classpathentry kind="lib" path="/home/sb/Desktop/BackUp/Downloads/selenium-java-3.141.59/libs/okhttp-3.11.0.jar"/>
 	<classpathentry kind="lib" path="/home/sb/Desktop/BackUp/Downloads/selenium-java-3.141.59/libs/okio-1.14.0.jar"/>
 	<classpathentry kind="lib" path="/home/sb/Desktop/BackUp/Jars/testng-6.9.10.jar"/>
-	<classpathentry kind="lib" path="/home/sb/Desktop/BackUp/Jars/ashot-1.5.4.jar"/>
+	<classpathentry kind="lib" path="/home/sb/Desktop/BackUp/Jars/ashot-1.5.4.jar" sourcepath="/home/sb/Desktop/BackUp/Srcs/ashot-master.zip"/>
 	<classpathentry kind="lib" path="/home/sb/Desktop/BackUp/Jars/jcommander-1.7.jar"/>
 	<classpathentry kind="lib" path="/home/sb/Desktop/BackUp/Jars/commons-io-2.6.jar"/>
 	<classpathentry kind="output" path="bin"/>

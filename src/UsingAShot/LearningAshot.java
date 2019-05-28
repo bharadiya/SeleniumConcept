@@ -18,12 +18,22 @@ import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 public class LearningAshot {
 	private static WebDriver driver;
 
-//		This takes screenshot of only current window
+/**
+ * Takes Screenshot of window size
+ * 1.Create object of AShot
+ * 2.Define ShootingStrategy
+ * 		a.shootingStrategy(ShootingStrategies.viewportPasting(2000))
+ * 3.Now we will take screenshot using AShot of entire view port
+ * 4.a.takeScreenshot(driver)
+ * 5.Now save created image using ImageIO.write class of Java which has 3 parameters sc.getImage(),<File type>,<File Path>
+ * @param @code AShot a
+ * @param @code ScreenShot sc
+ */
 	public static void takeScreenShotWindowSize(AShot a, Screenshot sc) {
 		Date d = new Date();
 		try {
 			ImageIO.write(sc.getImage(), "PNG", new File(
-					"/home/shashank/eclipse-workspace/SeleniumConcept/ScreenShotImages/" + d.toString() + ".png"));
+					"/home/sb/eclipse-workspace/SeleniumConcept/ScreenShotImages/" + d.toString() + ".png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -36,7 +46,7 @@ public class LearningAshot {
 		sc = a.shootingStrategy(ShootingStrategies.viewportPasting(2000)).takeScreenshot(driver);
 		try {
 			ImageIO.write(sc.getImage(), "JPG", new File(
-					"/home/shashank/eclipse-workspace/SeleniumConcept/ScreenShotImages/" + d.toString() + ".jpg"));
+					"/home/sb/eclipse-workspace/SeleniumConcept/ScreenShotImages/" + d.toString() + ".jpg"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -47,9 +57,9 @@ public class LearningAshot {
 		System.setProperty("webdriver.chrome.driver", "//home//sb//Desktop//BackUp//Downloads//chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.get("https://www.fb.com");
+		driver.get("https://www.amazon.in");
 		AShot a = new AShot();
 		Screenshot sc = a.takeScreenshot(driver);
-		takeScreenShotWindowSize(a, sc);
+		takeScreenShotEntireWebPage(a, sc);
 	}
 }
