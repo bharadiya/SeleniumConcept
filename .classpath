@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="main/resources/" kind="src" path="src"/>
 	<classpathentry kind="lib" path="/home/sb/Desktop/BackUp/Downloads/selenium-java-3.141.59/client-combined-3.141.59.jar" sourcepath="/home/sb/Desktop/BackUp/Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="/home/sb/Desktop/BackUp/Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="/home/sb/Desktop/BackUp/Downloads/selenium-java-3.141.59/libs/byte-buddy-1.8.15.jar"/>
@@ -13,5 +13,6 @@
 	<classpathentry kind="lib" path="/home/sb/Desktop/BackUp/Jars/ashot-1.5.4.jar" sourcepath="/home/sb/Desktop/BackUp/Srcs/ashot-master.zip"/>
 	<classpathentry kind="lib" path="/home/sb/Desktop/BackUp/Jars/jcommander-1.7.jar"/>
 	<classpathentry kind="lib" path="/home/sb/Desktop/BackUp/Jars/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="/home/sb/Desktop/BackUp/Jars/log4j-1.2.15.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
