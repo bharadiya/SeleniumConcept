@@ -1,17 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9812" started-at="2019-06-04T11:41:26Z" finished-at="2019-06-04T11:41:35Z">
+  <suite started-at="2019-06-21T17:35:05Z" name="Default suite" finished-at="2019-06-21T17:35:45Z" duration-ms="40838">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9812" started-at="2019-06-04T11:41:26Z" finished-at="2019-06-04T11:41:35Z">
-      <class name="POM.RegistrationTest">
-        <test-method status="PASS" signature="verifyFlightReg()[pri:0, instance:POM.RegistrationTest@617c74e5]" name="verifyFlightReg" duration-ms="9765" started-at="2019-06-04T17:11:26Z" finished-at="2019-06-04T17:11:35Z">
+    <test started-at="2019-06-21T17:35:05Z" name="Default test" finished-at="2019-06-21T17:35:45Z" duration-ms="40838">
+      <class name="SelectDatefromCurrent">
+        <test-method signature="onGoIbibo()[pri:0, instance:SelectDatefromCurrent@477b4cdf]" started-at="2019-06-21T17:35:05Z" name="onGoIbibo" finished-at="2019-06-21T17:35:45Z" duration-ms="40797" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at SelectDatefromCurrent.onGoIbibo(SelectDatefromCurrent.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyFlightReg -->
-      </class> <!-- POM.RegistrationTest -->
+        </test-method> <!-- onGoIbibo -->
+      </class> <!-- SelectDatefromCurrent -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

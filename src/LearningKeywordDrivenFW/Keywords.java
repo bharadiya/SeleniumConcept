@@ -1,5 +1,7 @@
 package LearningKeywordDrivenFW;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,13 +10,20 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class Keywords {
-	static WebDriver driver = null;
+	WebDriver driver = null;
 
-	public static void openBrowser(String browsername) {
+	public Keywords(WebDriver driver) {
+		this.driver = driver;
+	}
+	public void applyImplicitWait() {
+		driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
+	}
+	
+	public void openBrowser(String browsername) {
 		switch (browsername) {
 		case "chrome": {
 			System.setProperty("webdriver.chrome.driver", "//home//sb//Desktop//BackUp//Downloads//chromedriver");
-			driver = new ChromeDriver();	
+			driver = new ChromeDriver();
 			break;
 		}
 		case "firefox": {
@@ -27,46 +36,36 @@ public class Keywords {
 		}
 	}
 
-	public static void openURL(String url) {
+	public void openURL(String url) {
 		driver.get(url);
 	}
-	public static void enterText(String type, String value, String text) {
-/*	
- 	switch (type) {
-		case "xpath":
-			driver.findElement(By.xpath(value)).sendKeys(text);
-			break;
-		case "css":
-			driver.findElement(By.cssSelector(value)).sendKeys(text);
-			break;
-		case "id":
-			driver.findElement(By.id(value)).sendKeys(text);
-			break;
-		case "linktext":
-			driver.findElement(By.linkText(value)).sendKeys(text);
-			break;
-		case "partiallinktext":
-			driver.findElement(By.partialLinkText(value)).sendKeys(text);
-			break;
-		case "classname":
-			driver.findElement(By.className(value)).sendKeys(text);
-			break;
-		default:
-			System.out.println("Invalid Locator type");
-			break;
-	 }
-	 */
+
+	public void enterText(String type, String value, String text) {
+		/*
+		 * switch (type) { case "xpath":
+		 * driver.findElement(By.xpath(value)).sendKeys(text); break; case "css":
+		 * driver.findElement(By.cssSelector(value)).sendKeys(text); break; case "id":
+		 * driver.findElement(By.id(value)).sendKeys(text); break; case "linktext":
+		 * driver.findElement(By.linkText(value)).sendKeys(text); break; case
+		 * "partiallinktext":
+		 * driver.findElement(By.partialLinkText(value)).sendKeys(text); break; case
+		 * "classname": driver.findElement(By.className(value)).sendKeys(text); break;
+		 * default: System.out.println("Invalid Locator type"); break; }
+		 */
 		getWebElement(type, value).sendKeys(text);
 	}
+
 	/***
-	 * returns a WebElement where type should be in form of xpath,cssSelector,id,linkText,partialLinkText,className (Case Sensitive)
+	 * returns a WebElement where type should be in form of
+	 * xpath,cssSelector,id,linkText,partialLinkText,className (Case Sensitive)
 	 * 
-	 * @param type Eg : xpath,cssSelector,id ,linkText,partialLinkText,className
+	 * @param type  Eg : xpath,cssSelector,id ,linkText,partialLinkText,className
 	 * @param value Eg: //div[@class='u_0_3']
-	 * @return {@code WebElement } in the form of driver.findElement(By.{@code type(@code value )})
+	 * @return {@code WebElement } in the form of
+	 *         driver.findElement(By.{@code type(@code value )})
 	 *
 	 */
-	public static WebElement getWebElement(String type, String value) {
+	public WebElement getWebElement(String type, String value) {
 		WebElement element = null;
 		switch (type) {
 		case "xpath":
@@ -95,15 +94,17 @@ public class Keywords {
 		return element;
 	}
 
-	public static void clickOnWebElement(String type, String value) {
+	public void clickOnWebElement(String type, String value) {
 		getWebElement(type, value).click();
 	}
-	public static void selectValueFromDropDown(String type,String value,int index) {
-		WebElement element=getWebElement(type, value);
-		Select select=new Select(element);
+
+	public void selectValueFromDropDown(String type, String value, int index) {
+		WebElement element = getWebElement(type, value);
+		Select select = new Select(element);
 		select.selectByIndex(index);
 	}
-	public static void closeDriver() {
+
+	public void closeDriver() {
 		driver.close();
 	}
 }
