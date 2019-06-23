@@ -59,5 +59,6 @@ public class SelectDatefromCurrent {
 				}
 			}
 		}
+		driver.close();
 	}
 }
