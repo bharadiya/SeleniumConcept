@@ -26,7 +26,7 @@ public class CSVFileReader {
 		br = new BufferedReader(fr);
 	}
 
-	public int[] noOfLinesinFile() throws IOException {
+	private int[] noOfLinesinFile() throws IOException {
 		setUpConnection();
 		int[] data = new int[2];
 		// data[0] represents no of lines
@@ -34,7 +34,7 @@ public class CSVFileReader {
 		while ((s = br.readLine()) != null) {
 			data[0]++;
 			String[] csvvalues = s.split(",");
-			System.out.println(Arrays.deepToString(csvvalues));
+		//	System.out.println(Arrays.deepToString(csvvalues));
 			data[1] = csvvalues.length;
 		}
 		return data;

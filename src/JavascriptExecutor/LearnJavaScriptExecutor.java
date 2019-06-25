@@ -12,7 +12,7 @@ public class LearnJavaScriptExecutor extends AllRequirements {
 	}
 	public static void doScrolling(WebDriver driver) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeAsyncScript("window.scrollBy(1000,1000)");
+		js.executeAsyncScript("window.scrollBy(1000,1000);");
 	}
 	public static void windowResize(WebDriver driver) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;

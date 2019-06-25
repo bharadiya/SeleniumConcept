@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+//Tue Feb 29 2019
 public class SelectDatefromCurrent {
 	public static void main(String[] args) throws InterruptedException {
 		Date d = new Date();
@@ -15,6 +15,7 @@ public class SelectDatefromCurrent {
 		int tobeSelected = currentday + 10;
 		Calendar calendar = Calendar.getInstance();
 		Date today = calendar.getTime();
+		System.out.println();
 		System.out.println("today:    " + today);
 		calendar.add(Calendar.DAY_OF_YEAR, 15);
 		Date tomorrow = calendar.getTime();
