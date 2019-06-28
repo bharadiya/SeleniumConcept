@@ -1,5 +1,3 @@
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -25,9 +23,9 @@ public class SelectDatefromCurrentAnother {
 			Thread.sleep(2000);
 			while (driver.findElements(By.xpath("//div[@aria-label='Sat Feb 01 2020']")).size() == 0) {
 				driver.findElement(By.xpath("//*[@class='DayPicker-NavButton DayPicker-NavButton--next']")).click();
-				Thread.sleep(2000);
+				Thread.sleep(500);
 			}
-			driver.findElement(By.xpath("//div[@aria-label='Sat Feb 01 2020']")).click();
+			driver.findElement(By.xpath("//div[@aria-label='Thu Feb 06 2020']")).click();
 		}
 		// driver.close();
 	}
