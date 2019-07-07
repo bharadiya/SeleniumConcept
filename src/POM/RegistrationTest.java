@@ -11,7 +11,7 @@ public class RegistrationTest {
 
 	@Test
 	public void verifyFlightReg() {
-		System.setProperty("webdriver.chrome.driver", "//home//sb//Desktop//BackUp//Downloads//chromedriver");
+		System.setProperty("webdriver.chrome.driver", "./Drivers//chromedriver");
 		driver = new ChromeDriver();
 		Registrationpage2 p = new Registrationpage2(driver);
 		driver.get("http://newtours.demoaut.com/");

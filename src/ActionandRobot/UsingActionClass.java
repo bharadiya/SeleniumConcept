@@ -20,7 +20,7 @@ public class UsingActionClass {
 	}
 	
 	public static void main(String[] args) throws AWTException, InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "//home//sb//Desktop//BackUp//Downloads//chromedriver");
+		System.setProperty("webdriver.chrome.driver", "./Drivers//chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);

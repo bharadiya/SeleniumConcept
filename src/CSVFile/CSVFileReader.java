@@ -15,10 +15,11 @@ public class CSVFileReader {
 	private FileReader fr;
 	private BufferedReader br;
 	private String s;
+	
 
 	public CSVFileReader(String filePath) {
 		this.filePath = filePath;
-		this.file = new File(filePath);
+		this.file  = new File(filePath);
 	}
 
 	private void setUpConnection() throws IOException {

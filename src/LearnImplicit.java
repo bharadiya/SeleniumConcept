@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LearnImplicit {
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "//home//sb//Desktop//BackUp//Downloads//chromedriver");
+		System.setProperty("webdriver.chrome.driver", "./Drivers//chromedriver");
 		WebDriver driver = new ChromeDriver();
 		//driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		driver.get("https://www.fb.com/");

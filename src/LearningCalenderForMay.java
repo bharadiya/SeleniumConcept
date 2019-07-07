@@ -46,7 +46,7 @@ public class LearningCalenderForMay {
 	}
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "//home//sb//Desktop//BackUp//Downloads//chromedriver");
+		System.setProperty("webdriver.chrome.driver", "./Drivers//chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.goibibo.com/");
 		// driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);

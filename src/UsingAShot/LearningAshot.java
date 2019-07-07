@@ -54,7 +54,7 @@ public class LearningAshot {
 	}
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "//home//sb//Desktop//BackUp//Downloads//chromedriver");
+		System.setProperty("webdriver.chrome.driver", "./Drivers//chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("https://www.amazon.in");

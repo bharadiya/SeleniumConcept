@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class CustomisedCSS {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "//home//sb//Desktop//BackUp//Downloads//chromedriver");
+		System.setProperty("webdriver.chrome.driver", "./Drivers//chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://fb.com");
 		// Customised xpath and css used here

@@ -21,7 +21,7 @@ public class SelectDatefromCurrent {
 		Date tomorrow = calendar.getTime();
 		System.out.println("tomorrow: " + tomorrow);
 		System.out.println(tomorrow.getDate());
-		System.setProperty("webdriver.chrome.driver", "//home//sb//Desktop//BackUp//Downloads//chromedriver");
+		System.setProperty("webdriver.chrome.driver", "./Drivers//chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.goibibo.com/");
 		driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);

@@ -12,7 +12,7 @@ public class LearningHandlingSSL {
 	public void handleCertificate() {
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, false);
-		System.setProperty("webdriver.chrome.driver", "//home//sb//Desktop//BackUp//Downloads//chromedriver");
+		System.setProperty("webdriver.chrome.driver", "./Drivers//chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.cacert.org");
 	}

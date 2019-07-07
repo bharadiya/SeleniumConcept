@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
+
 public class Keywords {
 	WebDriver driver = null;
 
@@ -22,12 +23,12 @@ public class Keywords {
 	public void openBrowser(String browsername) {
 		switch (browsername) {
 		case "chrome": {
-			System.setProperty("webdriver.chrome.driver", "//home//sb//Desktop//BackUp//Downloads//chromedriver");
+			System.setProperty("webdriver.chrome.driver", "./Drivers//chromedriver");
 			driver = new ChromeDriver();
 			break;
 		}
 		case "firefox": {
-			System.setProperty("webdriver.gecko.driver", "//home//shashank//Downloads//Compressed//geckodriver");
+			System.setProperty("webdriver.gecko.driver", "./Drivers//geckodriver");
 			driver = new FirefoxDriver();
 			break;
 		}
@@ -106,5 +107,10 @@ public class Keywords {
 
 	public void closeDriver() {
 		driver.close();
+	}
+	
+	public WebElement containsText(String tagname,String textContains) {
+		WebElement element = driver.findElement(By.xpath("//"+tagname+"[contains(text(),'" + textContains + "')]"));
+		return element;
 	}
 }

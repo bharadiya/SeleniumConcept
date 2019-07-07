@@ -11,7 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class RightClickUsingActions {
 	public static void main(String[] args) throws AWTException, InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "//home//sb//Desktop//BackUp//Downloads//chromedriver");
+		System.setProperty("webdriver.chrome.driver", "./Drivers//chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 		driver.get("https://www.shutterfly.com/");
