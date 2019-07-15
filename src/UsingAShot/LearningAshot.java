@@ -33,7 +33,7 @@ public class LearningAshot {
 		Date d = new Date();
 		try {
 			ImageIO.write(sc.getImage(), "PNG", new File(
-					"/home/sb/eclipse-workspace/SeleniumConcept/ScreenShotImages/" + d.toString() + ".png"));
+					"./ScreenShotImages/" + d.toString() + ".png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -46,7 +46,7 @@ public class LearningAshot {
 		sc = a.shootingStrategy(ShootingStrategies.viewportPasting(2000)).takeScreenshot(driver);
 		try {
 			ImageIO.write(sc.getImage(), "JPG", new File(
-					"/home/sb/eclipse-workspace/SeleniumConcept/ScreenShotImages/" + d.toString() + ".jpg"));
+					"./ScreenShotImages/" + d.toString() + ".jpg"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

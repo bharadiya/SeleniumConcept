@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="LearningKeywordDrivenFW.TestCases">
+      <class name="FlipKart.SignInandSignOut">
         <methods>
-          <include name="tc_01"/>
+          <include name="doLoginandLogout"/>
         </methods>
-      </class> <!-- LearningKeywordDrivenFW.TestCases -->
+      </class> <!-- FlipKart.SignInandSignOut -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
