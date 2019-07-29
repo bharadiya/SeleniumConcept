@@ -28,7 +28,6 @@ public class UsingJavaInBuiltMethod extends AllRequirements {
 			FileUtils.copyFile(screenshot, new File("/home/shashank/eclipse-workspace/SeleniumConcept/ScreenShotImages/"
 					+ monthName[cal.get(Calendar.MONTH)] + "/" + d.toString() + ".png"));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

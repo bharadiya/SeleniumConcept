@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-public class SignInandSignOut {
+public class FKIphoneAveragePrice {
 	WebDriver driver = null;
 	double avg = 0;
 	private int sum;
@@ -33,12 +33,17 @@ public class SignInandSignOut {
 		for (int i = 1; i <= iphonePrice.size(); i++) {
 			WebElement iphone = driver.findElement(By.xpath("(//div[@class='_1vC4OE _2rQ-NK'])[" + i + "]"));
 			String iphoneAmount = iphone.getText();
-			System.out.println(iphoneAmount);
+			String temp=iphoneAmount;
+			String iphoneName = driver.findElement(By.xpath("(//div[@class='_3wU53n'])[" + i + "]")).getText();
+			// System.out.println(iphoneName + " : " + iphoneAmount);
 			iphoneAmount = iphoneAmount.replaceAll("[^0-9]", "");
 			sum += Integer.parseInt(iphoneAmount);
+			if (Integer.parseInt(iphoneAmount) > 50000) {
+				System.out.println(iphoneName + " : " + temp);
+			}
 		}
-		avg = (double) sum / (double) iphonePrice.size();
-		System.out.println(avg);
+		// avg = (double) sum / (double) iphonePrice.size();
+		// System.out.println(avg);
 //		Actions a = new Actions(driver);
 //		WebElement arrow = driver.findElement(By.xpath(
 //				"//body/div[@id='container']/div/div[@class='_3ybBIU']/div[@class='_1tz-RS']/div[@class='_3pNZKl']/div[3]/div[1]"));
