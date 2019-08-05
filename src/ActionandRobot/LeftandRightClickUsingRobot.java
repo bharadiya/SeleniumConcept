@@ -116,12 +116,5 @@ public class LeftandRightClickUsingRobot {
 		// doScrolling(robo);
 		// robo.mouseMove(400, 900);
 		// doubleClick(robo);
-		int j = 1;
-		while (true) {
-			stayOnScreen(robo);
-			j++;
-			if (j == 100)
-				break;
-		}
 	}
 }

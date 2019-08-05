@@ -57,7 +57,7 @@ public class LearningAshot {
 		System.setProperty("webdriver.chrome.driver", "./Drivers//chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.get("https://www.amazon.in");
+		driver.get("https://www.timesofindia.com");
 		AShot a = new AShot();
 		Screenshot sc = a.takeScreenshot(driver);
 		takeScreenShotEntireWebPage(a, sc);
